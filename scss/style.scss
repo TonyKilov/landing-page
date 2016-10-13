@@ -55,6 +55,9 @@ time, mark, audio, video {
   height: 100vh;
   background-color: #eff0f2;
   background-size: auto;
+  @media screen and (max-width: 720px) {
+    height: auto;
+  }
 }
 
 .head-men-log {
@@ -94,6 +97,38 @@ time, mark, audio, video {
   font-size: 45px;
   text-transform: uppercase;
   div {
+    span {
+      padding: 0 5px;
+      background-color: #b2f2ee;
+    }
   } 
 }
 
+.head-contact {
+  text-align:center;
+  text-transform:uppercase;
+  margin: 10px 0;
+  a {
+    display: inline-block;
+    border: 2px solid #777879;
+    padding: 5px 20px;
+    color: #777879;
+    &:hover {
+      text-decoration: none;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(119, 120, 121, 0.75);
+      -moz-box-shadow:    0px 0px 5px 0px rgba(119, 120, 121, 0.75);
+      box-shadow:         0px 0px 5px 0px rgba(119, 120, 121, 0.75);
+    }
+    
+  }
+
+}
+
+.head-glass {
+
+  a {
+    background: url("image/cube-water.png") center center;
+    height: ;
+    weight: ;
+  }
+}
