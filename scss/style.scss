@@ -47,10 +47,11 @@ time, mark, audio, video {
 }
 
 .main-title {
-  padding: 65px 0;
+  margin-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
     h1 {
+      padding-top: 65px;
       font-weight: bold;
       font-family: 'Montserrat-Bold';
       font-size: 45px;
@@ -58,6 +59,7 @@ time, mark, audio, video {
     }
 
     span {
+      margin-bottom: 45px;
       font-size: 15px;
       font-family: 'Montserrat-Regular';
       color: #848585;
@@ -119,7 +121,11 @@ time, mark, audio, video {
       padding: 0 5px;
       background-color: #b2f2ee;
     }
-  } 
+  }
+
+    @media screen and (max-width: 720px) {
+       margin: 5vh 0;
+     } 
 }
 
 .head-contact {
@@ -169,4 +175,30 @@ time, mark, audio, video {
 .feat-work {
   background-color: #ffffff;
 
+}
+
+.feat-image {
+  margin: 3vh 0;
+  text-align: center;
+
+  .feat-image-f {
+    float: left;
+    width: 31%;
+    margin: 1%;
+    
+    img {
+      width: 100%;
+    }
+
+  }
+
+
+  @media screen and (max-width:720px) {
+    margin: 1vh;
+
+    .feat-image-f {
+      width: 48%;
+      margin: 1%;
+    }
+  }
 }
