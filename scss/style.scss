@@ -30,21 +30,29 @@ time, mark, audio, video {
 
 @font-face { 
   font-family: 'Montserrat-Bold'; 
-  src: url('/css/webfont/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), 
-  url('/css/webfont/Montserrat-Bold.woff') format('woff'), 
-  url('/css/webfont/Montserrat-Bold.ttf') format('truetype'), 
-  url('/css/webfont/Montserrat-Bold.svg#Montserrat-Bold') format('svg'); 
+  src: url('../font/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('../font/Montserrat-Bold.woff') format('woff'), 
+  url('../font/Montserrat-Bold.ttf') format('truetype'), 
+  url('../font/Montserrat-Bold.svg#Montserrat-Bold') format('svg'); 
   font-weight: normal; font-style: normal; 
 }
 
 @font-face { 
   font-family: 'Montserrat-Regular'; 
-  src: url('/css/webfont/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), 
-  url('/css/webfont/Montserrat-Regular.woff') format('woff'), 
-  url('/css/webfont/Montserrat-Regular.ttf') format('truetype'), 
-  url('/css/webfont/Montserrat-Regular.svg#Montserrat-Regular') format('svg'); 
+  src: url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), 
+  url('../font/Montserrat-Regular.woff') format('woff'), 
+  url('../font/Montserrat-Regular.ttf') format('truetype'), 
+  url('../font/Montserrat-Regular.svg#Montserrat-Regular') format('svg'); 
   font-weight: normal; font-style: normal; 
 }
+
+@font-face {
+ font-family: 'Merriweather-Regular';
+ src: url('../font/Merriweather-Regular.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
 
 .main-title {
   margin-bottom: 15px;
@@ -60,8 +68,8 @@ time, mark, audio, video {
 
     span {
       margin-bottom: 45px;
-      font-size: 15px;
-      font-family: 'Montserrat-Regular';
+      font-size: 12px;
+      font-family: 'Merriweather-Regular';
       color: #848585;
     }
 }
@@ -178,10 +186,11 @@ time, mark, audio, video {
 }
 
 .feat-image {
-  margin: 3vh 0;
+  margin-top: 3vh;
+  margin-bottom: 15vh;
   text-align: center;
 
-  .feat-image-f {
+  .feat-image-item {
     float: left;
     width: 31%;
     margin: 1%;
@@ -201,4 +210,39 @@ time, mark, audio, video {
       margin: 1%;
     }
   }
+}
+
+
+// Our servise
+
+.our-service {
+  background-color: #f9fbfb;
+}
+
+.our-image {
+  margin-top: 3vh;
+  margin-bottom: 15px;
+  text-align: center;
+    .our-image-item {
+      float: left;
+      margin-left:1%;
+      margin-right:1%;
+      img{
+        width: 100%;
+      }
+    }
+
+
+    .our-image-item:first-child {
+      background-color: #70f5eb;
+      width: 58%;
+      img {
+        display: none;
+      }
+    }
+
+    .our-image-item:nth-child(2n) {
+      width: 48%;
+    }
+
 }
