@@ -80,10 +80,20 @@ time, mark, audio, video {
     }
 }
 
-// Header
-.section {
 
+.overlay {
+  display: none;
+  height: 100vh;
+  width: 100vh;
+  position: fixed; 
+  background: rgba(0,0,0,0.7);
+  z-index:  10;
 }
+// Header
+.section {}
+
+
+
 .head-bcg {
   background-color: #eff0f2;
   background-size: auto;
@@ -92,11 +102,11 @@ time, mark, audio, video {
   }
 }
 
-.head-men-log {
+.head-menu-logo {
   
   padding: 5vh 0;
 
-  .head-log {
+  .head-logo {
     border: 5px solid black;
     display: inline-flex;
     padding: 5px;
@@ -113,14 +123,66 @@ time, mark, audio, video {
   .head-menu {
     display: inline-flex;
     float: right;
-      a {
-        background: url("../image/icon-menu.png") center center;
-        width: 30px;
-        height: 21px;
-        margin: 8px 0;
-      }
-  }
 
+}
+
+}
+.head-btn-menu {
+  background: url("../image/icon-menu.png") center center;
+  width: 30px;
+  height: 21px;
+  margin: 8px 0;
+    &:hover { cursor: pointer; }
+}
+
+// hide menu
+.head-menu-hide {
+  z-index: 15;
+  background: #eff0f2;
+  border: 1px solid #ccc4c4;
+  height: 100vh;
+  position: fixed;
+  width: 0;
+  right: -2px;
+  top: 0;
+  text-align: center;
+  overflow-y:auto;
+  transition: all 1s easy; 
+  -moz-transition:1s ease all; 
+  -webkit-transition:1s ease all;
+    &.open { width:55%; }
+
+    .head-menu-close {
+      margin: 5px 10px;
+      position: relative;
+      background: url("../image/icon-menu-close.png") no-repeat center center;
+      width: 16px;
+      height: 16px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      display: block;
+      color: #505050;
+      padding: 25px 5px;
+      font-family: 'Raleway-Regular';
+      border-bottom: 1px solid gray;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 20px;
+      min-width: 400px;
+      @media screen and (max-width: 360px) {
+        min-width: auto;
+      }
+      &:hover {
+        background: #505050;
+        color: white;
+        text-decoration: none;
+      } 
+    }
 }
 
 .head-tagline {
@@ -353,16 +415,23 @@ time, mark, audio, video {
 }
 
 
-// small team 
+// small team
+.team-image-row { 
+  font-size: 0;
+  margin: 0 auto; 
+}
 .team-image-item {
   display: inline-block;
   width: 31%;
-  height: 420px;
-  float: left;
-  margin: 0 1%;
+  margin: 1% 1%;
 
     img {
       width: 100%;
       height: 100%;
     }
+
+
+  @media screen and (max-width: 720px) {
+    width: 48%;
+  }
 }
