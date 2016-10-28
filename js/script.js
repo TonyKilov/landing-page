@@ -10,4 +10,10 @@ $(document).ready(function()
 		$('.head-menu-hide').removeClass('open'); 
 	});
 
+
+	$('.btn-close-block').click(function(e)
+	{
+		$(e.target).parents('.our-image-item').hide();
+	});
+
 });
