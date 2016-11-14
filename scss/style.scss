@@ -137,7 +137,7 @@ time, mark, audio, video {
 
 // hide menu
 .head-menu-hide {
-  z-index: 15;
+  z-index: 1050;
   background: #eff0f2;
   border: 1px solid #ccc4c4;
   height: 100vh;
@@ -452,4 +452,46 @@ time, mark, audio, video {
   @media screen and (max-width: 720px) {
     width: 98%;
   }
+}
+
+
+// style slider
+.ws-title {
+  span 
+  {
+    display:none !important;
+  }
+}
+
+.wrap-slider {
+  margin-bottom: 35px;  
+}
+
+ .ws_controls {
+    a {
+      transition: all 1s easy; 
+      -moz-transition:1s ease all; 
+      -webkit-transition:1s ease all;
+      display: none !important;
+    }  
+ }
+
+ .wrap-slider {
+     &:hover{
+       .ws_controls {
+          a {
+            display:block !important;
+            
+            &:hover {
+              img {
+                display: none !important;
+              }
+            }
+          }
+       }
+   }
+ }
+
+.ws_playpause.ws_pause {
+  display: block !important;
 }
