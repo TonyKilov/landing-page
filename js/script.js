@@ -11,9 +11,11 @@ $(document).ready(function()
 	});
 
 
-	$('.btn-close-block').click(function(e)
+	$('.btn-close-block').click(function()
 	{
-		$(e.target).parents('.our-image-item').hide();
+		$(this).parents('.our-image-item').hide();
+
+		$(this).parents('.our-image-row').find('.our-image-item').addClass('wdt');
 	});
 
 });
