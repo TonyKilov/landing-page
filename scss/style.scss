@@ -345,16 +345,8 @@ time, mark, audio, video {
     width: 100%;
   }
 
-  // &:first-child {
-  //   background-color: #70f5eb;
-  //   width: 60%;
-  //   img {
-  //     display: none;
-  //   }
 
-  // }
 
-  // &:nth-child(2n) { width: 36%; }
   a {
     padding: 6px;
     margin: 10px 0;
@@ -436,6 +428,13 @@ time, mark, audio, video {
 }
 .dsp-none { display: none; }
 
+
+
+
+
+
+
+
 // small team
 .team-image-row { 
   font-size: 0;
@@ -489,6 +488,31 @@ time, mark, audio, video {
       position: absolute;
       opacity: 0
     }
+}
+
+.team-block-name-role {
+  margin: 10px 0;
+  text-align: center;
+  
+  span {
+    display: inline-block;
+    height: 20px;
+    font-size: 12px;
+
+    &:first-child {
+      font-family: "Montserrat-Bold";
+      font-weight: bold;
+      
+      &::after {
+        content: " /" ;
+      }
+    }
+    &:last-child {
+      font-family: "Merriweather-Regular";
+      font-style:italic;
+      margin-left: 5px;
+    }
+  }
 }
 
 
