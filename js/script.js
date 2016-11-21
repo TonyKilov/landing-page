@@ -18,4 +18,7 @@ $(document).ready(function()
 		$(this).parents('.our-image-row').find('.our-image-item').addClass('wdt');
 	});
 
+
+  	$('.bxslider').bxSlider();
+
 });

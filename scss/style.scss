@@ -216,6 +216,7 @@ time, mark, audio, video {
     color: #777879;
     &:hover {
       text-decoration: none;
+      color: #676664;
       -webkit-box-shadow: 0px 0px 5px 0px rgba(119, 120, 121, 0.75);
       -moz-box-shadow:    0px 0px 5px 0px rgba(119, 120, 121, 0.75);
       box-shadow:         0px 0px 5px 0px rgba(119, 120, 121, 0.75);
@@ -436,7 +437,13 @@ time, mark, audio, video {
 }
 .dsp-none { display: none; }
 
+
+
+
 // small team
+
+.team-image { margin-bottom: 20px; }
+
 .team-image-row { 
   font-size: 0;
   margin: 0 auto; 
@@ -480,30 +487,7 @@ time, mark, audio, video {
   -moz-transition:1s ease all; 
   -webkit-transition:1s ease all;
 
-    .team-block-name-role {
-      display: inline-block;
-      width: 100%;
-      margin: 10px 0;
-      text-align: center;
 
-      span {
-        display: inline-block;
-        height: 20px;
-        font-size: 14px;
-        &:first-child {
-          font-family: 'Montserrat-Bold';
-          font-weight: bold;
-          &::after {
-            content: " / ";
-          }
-        }
-        &:last-child {
-          font-family: 'Merriweather-Regular';
-          font-style: italic;
-          font-size: 12px;
-        }
-      }
-    }
     &::before {
       content: "";
       background-image: url("../image/shape-team.png");
@@ -514,6 +498,33 @@ time, mark, audio, video {
       position: absolute;
       opacity: 0
     }
+}
+
+.team-block-name-role {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+  
+  span {
+    display: inline-block;
+    height: 20px;
+    font-size: 14px;
+    &:first-child {
+      font-family: 'Montserrat-Bold';
+      font-weight: bold;
+    
+        &::after {
+          content: " / ";
+          }
+      }
+   
+    &:last-child {
+      font-family: 'Merriweather-Regular';
+      font-style: italic;
+      font-size: 12px;
+        }
+      }
 }
 
 .team-block-testemonials {
@@ -529,14 +540,155 @@ time, mark, audio, video {
 }
 
 .team-social {
-  margin: 5px;
+  position: absolute;
+  bottom: 5px;
+  margin:0px 5px;
   text-align: left;
   font-size: 14px;
+  
+    a {
+      color: #626262;
+      text-align: center;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid transparent;
+
+      &:hover {
+        color: rgba(12, 132, 255, 0.69);
+        border: 1px solid rgba(12, 132, 255, 0.69);
+        border-radius: 50%;
+      }  
+    }
 
     i {
-      margin-right: 5px;
+      width: 20px;
+      height: 19px;
+      line-height: 19px;
     }  
 }
+
+.team-link {
+  color: #626262;
+
+  &:hover {
+    color: white;
+  }
+}
+
+
+
+
+// Whst say
+
+.whats-says {
+  background-color: #f9fbfb;
+} 
+
+.what-sld-wrap {
+  margin: 0 20px;
+}
+
+.what-sld-image {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  margin: 1%;
+  height: 275px;
+  img {
+
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+  }
+
+  &::before {
+
+  }
+}
+
+.what-sld-txt {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  margin: 10px;
+  width: 60%;
+
+}
+
+.what-block-name.team-block-name-role {
+  font-size: 16px;
+}
+
+.what-sld-basic-txt {
+
+}
+
+
+// what-says slider
+.bx-viewport {
+  background-color: #f9fbfb !important;
+}
+
+.bx-wrapper .bx-viewport {
+  background-color:  #f9fbfb;
+  box-shadow: none;
+  border: 5px solid transparent;
+}
+
+.bx-wrapper .bx-pager, 
+.bx-wrapper .bx-controls-auto {
+  position: relative;
+  bottom: 25px;
+  width: 33%;
+  display: inline-block;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #d0d0d0;
+  text-indent: -9999px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  outline: 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #71f6eb;
+  }
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active { background-color: #71f6eb; }
+
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 83%;
+    margin-top: -16px;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    z-index: 9999;
+    border-radius: 5px;
+}
+
+.bx-wrapper .bx-prev {
+  right: 70px ;
+  background: none;
+  background-color: #ffffff;
+}
+
+.bx-wrapper .bx-controls-direction .bx-next {
+  right: 10px;
+  background: none;
+  background-color: #ffffff;
+}
+
+
 
 
 
