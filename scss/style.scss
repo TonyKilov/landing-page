@@ -589,41 +589,86 @@ time, mark, audio, video {
 }
 
 .what-sld-image {
-  position: relative;
-  display: inline-block;
+  float: left;
   width: 35%;
   margin: 1%;
   height: 275px;
-  img {
-
-    width: 95%;
-    height: 100%;
-    position: absolute;
-    z-index: 100;
-  }
-
+  background-size: cover;
+  background-position: center center;
   &::before {
 
   }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
-.what-sld-txt {
-  position: absolute;
+.what-sld-txt-wrap {
   top: 0;
-  display: inline-block;
-  margin: 10px;
+  float: right;
+  margin: 9px 5px;
   width: 60%;
+  display: table;
+  height: 275px;
 
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+.what-sld-txt-basic {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #eaebed;
 }
 
 .what-block-name.team-block-name-role {
   font-size: 16px;
+  .team-role {
+    color: #858585;
+  }
 }
 
-.what-sld-basic-txt {
-
+.what-txt-wrap {
+  text-align: center;
+  color: #464647;
+  font-family: 'Raleway-Regular'; 
 }
 
+.team-star {
+  text-align: center;
+  margin-top: 25px;
+  .star-item {
+    display: inline-block;
+    background-image: url("../image/star.png");
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+
+
+
+
+.logo-partner {
+  background-color: #ffffff;
+  margin: 10px 0;
+
+  .row-1 {
+    text-align: center;
+    margin: 10px 0;
+
+    .logo-item {
+      display: inline-block;
+    }
+  }
+}
+
+ // 
+ // 
+ // 
 
 // what-says slider
 .bx-viewport {
@@ -639,9 +684,14 @@ time, mark, audio, video {
 .bx-wrapper .bx-pager, 
 .bx-wrapper .bx-controls-auto {
   position: relative;
-  bottom: 25px;
-  width: 33%;
+  bottom: 5px;
+  width: 35%;
   display: inline-block;
+
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
@@ -666,26 +716,41 @@ time, mark, audio, video {
 
 .bx-wrapper .bx-controls-direction a {
     position: absolute;
-    top: 83%;
-    margin-top: -16px;
+    top: 100%;
+    margin-top: -15px;
     outline: 0;
-    width: 50px;
+    width: 50px;  
     height: 50px;
     text-indent: -9999px;
     z-index: 9999;
     border-radius: 5px;
+
+    &:hover {
+      background-color: #71f6eb;
+    }
 }
 
 .bx-wrapper .bx-prev {
-  right: 70px ;
-  background: none;
+  right: 80px ;
   background-color: #ffffff;
+
+  &:hover {
+    background-position: center;
+  }
 }
 
 .bx-wrapper .bx-controls-direction .bx-next {
-  right: 10px;
-  background: none;
+  right: 15px;
   background-color: #ffffff;
+
+  &:hover {
+    background-position: center;
+  }
+}
+
+.bx-wrapper .bx-pager {
+  padding-top: 0;
+
 }
 
 
