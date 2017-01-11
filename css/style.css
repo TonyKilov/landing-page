@@ -482,6 +482,9 @@ time, mark, audio, video {
       background-position: center;
       height: 75px;
       background-repeat: no-repeat; }
+      @media screen and (max-width: 910px) {
+        .logo-partner .row-1 .logo-item {
+          width: 22%; } }
       @media screen and (max-width: 720px) {
         .logo-partner .row-1 .logo-item {
           width: 30%; } }
@@ -542,15 +545,19 @@ time, mark, audio, video {
   display: inline-block;
   vertical-align: top; }
 
+@media screen and (max-width: 720px) {
+  .buttons-cont {
+    text-align: center; } }
+
 .buttons-breez {
   display: inline-block;
   padding: 10px 20px;
   background-color: #24eee6;
   border-radius: 5px;
   text-transform: uppercase;
-  color: #b2bac0; }
+  color: #858C92; }
   .buttons-breez:hover {
-    color: #b2bac0; }
+    color: #6C6E6D; }
 
 .transition {
   transition: all 0.4s; }

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing page</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	
+
+
+
+</head>
+
+<body>
+	<div class="overlay"></div>
+	<!-- HEADER -->
+	<header>
+			<div class="head-bcg">
+				<div class="container">
+
+					<div class="head-menu-logo">
+						
+						<div class="head-logo">
+							<a href="#"></a>
+						</div>
+						
+						<div class="head-menu">
+							<a class="head-btn-menu" href="#"></a>
+
+
+
+							<div class="head-menu-hide">
+								<div class="head-menu-close"></div>
+								<a href="#">about us</a>
+								<a href="#">featured work</a>
+								<a href="#">our service</a>
+								<a href="#">small team</a>
+								<a href="#">what they says</a>
+								<a href="#">contact us</a>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="head-tagline">
+						<div>say hello to <span>shop</span></div>
+						<div><span>agency</span> corparate shopno theme</div>
+					</div>	
+					
+					<div class="head-contact">
+						<a href="#">contact us</a>
+					</div>
+
+					
+					<div class="head-glass">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+	</header>
+
+
+	<section>
+		<div class="about-us">
+			<div class="container">
+				<div class="main-title">
+					<h1>about us</h1>
+					
+					<span class="about-us-tagline">
+					lorem ipsum dolor sit amet event landing template
+					</span>
+				</div>
+
+
+				<div class="about-us-slaider-txt">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- featured works -->
+	<section>
+		<div class="feat-work">
+			<div class="container">
+				<div class="main-title">
+					<h1>featured work</h1>
+					
+					<span>
+					lorem ipsum dolor sit amet event landing template
+					</span>
+				</div>
+
+				<div class="feat-image clearfix">
+					<div class="feat-image-item" style="background-image: url(image/image2.png);">
+						<a href="#"></a>
+					</div>
+					
+					<div class="feat-image-item" style="background-image: url(image/image3.png);">
+						<a href="#"></a>
+					</div>
+
+					<div class="feat-image-item" style="background-image: url(image/image2.png);">
+						<a href="#"></a>
+					</div>
+
+					<div class="feat-image-item" style="background-image: url(image/image1.png);">
+						<a href="#"></a>
+					</div>
+
+					<div class="feat-image-item" style="background-image: url(image/image2.png);">
+						<a href="#"></a>
+					</div>
+
+					<div class="feat-image-item" style="background-image: url(image/image1.png);">
+						<a href="#"></a>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Our Service -->
+
+	<section>
+		<div class="our-service">
+			<div class="container">
+				<div class="main-title">
+					<h1>our service</h1>
+					<span>lorem ipsum dolor sit amet event landing template</span>
+				</div>
+
+				<div class="our-image clearfix">
+					
+					<div class="our-image-row our-image-row-1 clearfix">
+						<div class="our-image-item">
+							<div class="our-image-item-hover">
+								<h3>cool design</h3>
+								<div class="our-image-txt">
+									Our most popular service is our new virtual Receptional you middle most
+								</div>
+								<a class="our-link" href="#">know more <span class="glyphicon glyphicon-arrow-right"></span></a>
+
+								<div class="btn-close-block"></div>
+							</div>
+
+						</div>
+
+						<div class="our-image-item" style="background-image: url(image/image-tar.jpg)">
+						<!-- empty block hovr -->
+							<div class="our-image-item-hover">
+								<h3>cool design</h3>
+								<div class="our-image-txt">
+									Our most popular service is our new virtual Receptional you middle most
+								</div>
+								<a class="our-link" href="#">know more <span class="glyphicon glyphicon-arrow-right"></span></a>
+							</div>
+						</div>
+					
+					</div>
+
+					<div class="our-image-row our-image-row-1 clearfix">
+						<div class="our-image-item" style="background-image: url(image/dishes.jpg)">
+							<div class="our-image-item-hover">
+								<h3>cool design</h3>
+								<div class="our-image-txt">
+									Our most popular service is our new virtual Receptional you middle most
+								</div>
+								<a class="our-link" href="#">know more <span class="glyphicon glyphicon-arrow-right"></span></a>
+
+							</div>
+						</div>
+						
+						<div class="our-image-item" style="background-image: url(image/careers.jpg)">
+							<div class="our-image-item-hover">
+								<h3>cool design</h3>
+								<div class="our-image-txt">
+									Our most popular service is our new virtual Receptional you middle most
+								</div>
+								<a class="our-link" href="#">know more <span class="glyphicon glyphicon-arrow-right"></span></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="our-image-row our-image-row-2 clearfix">
+						<div class="our-image-item" style="background-image:url(image/notes-image.jpg)">
+							<div class="our-image-item-hover">
+								<h3>cool design</h3>
+								<div class="our-image-txt">
+									Our most popular service is our new virtual Receptional you middle most
+								</div>
+								<a class="our-link" href="#">know more <span class="glyphicon glyphicon-arrow-right"></span></a>
+							</div>
+						</div>
+						
+						<div class="our-image-item" style="background-image: url(image/comp-image.jpg)">
+							<div class="our-image-item-hover">
+								<h3>cool design</h3>
+								<div class="our-image-txt">
+									Our most popular service is our new virtual Receptional you middle most
+								</div>
+								<a class="our-link" href="#">know more <span class="glyphicon glyphicon-arrow-right"></span></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Small team -->
+	<section>
+		<div class="small-team">
+			<div class="container">
+				<div class="main-title">
+					<h1>small team</h1>
+					<span>lorem ipsum dolor sit amet event landing template</span>
+				</div>
+
+				<div class="team-image">
+					<div class="team-image-row">
+						
+						<div class="team-image-item">
+							<img src="image/team-photo3.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+
+						<div class="team-image-item">
+							<img src="image/team_photo2.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+
+						<div class="team-image-item">
+							<img src="image/team_photo2.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+					</div>
+
+					<div class="team-image-row">
+						
+						<div class="team-image-item">
+							<img src="image/team-photo3.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+						
+						<div class="team-image-item">
+							<img src="image/team_photo2.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+
+						<div class="team-image-item">
+							<img src="image/team_photo2.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+
+					</div>
+					
+					<div class="team-image-row">
+						
+						<div class="team-image-item">
+							<img src="image/team_photo2.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+
+						<div class="team-image-item">
+							<img src="image/team_photo2.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+
+						<div class="team-image-item">
+							<img src="image/team_photo2.jpg" alt="">
+							<div class="team-block-hide"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
