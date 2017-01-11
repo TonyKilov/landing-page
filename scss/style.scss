@@ -690,7 +690,7 @@ time, mark, audio, video {
 }
 
 .contact-input {
-  margin: 5px 10px;
+  margin: 15px 20px;
 }
 
 .contact-form-atrb {
@@ -722,10 +722,11 @@ time, mark, audio, video {
   }
 }
 
-.text-area {
+.contact-form-atrb .text-area {
   resize: none;
   width: 100%;
   height: 120px;
+  margin-bottom: 10px;
 }
 
 .contact-form-map { 
@@ -736,6 +737,17 @@ time, mark, audio, video {
   vertical-align: top;
 }
 
+.buttons-breez {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #24eee6;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #b2bac0;
+  &:hover {
+    color: #b2bac0;
+  }
+}
 
  // 
  .transition {
@@ -743,6 +755,8 @@ time, mark, audio, video {
     -webkit-input-placeholder { color: #b2bac0; } 
     transition: all 0.4s; 
 }
+
+
  // 
  // 
 
