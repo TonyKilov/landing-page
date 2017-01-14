@@ -70,7 +70,9 @@ time, mark, audio, video {
 
 .head-bcg {
   background-color: #eff0f2;
-  background-size: auto; }
+  background-image: url("../image/iphone6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
   @media screen and (max-width: 720px) {
     .head-bcg {
       height: auto; } }
@@ -142,6 +144,7 @@ time, mark, audio, video {
 .head-tagline {
   text-align: center;
   margin: 15vh 0;
+  margin-bottom: 25vh;
   font-size: 45px;
   font-weight: bold;
   color: #505050;
@@ -156,15 +159,16 @@ time, mark, audio, video {
 .head-contact {
   text-align: center;
   text-transform: uppercase;
-  margin: 10px 0; }
+  margin: 20px 0; }
   .head-contact a {
     display: inline-block;
-    border: 2px solid #777879;
+    border: 2px solid #b2f2ee;
     padding: 5px 20px;
-    color: #777879; }
+    color: #b2f2ee; }
     .head-contact a:hover {
+      border: 2px solid #626060;
       text-decoration: none;
-      color: #676664;
+      color: #F6F2F2;
       -webkit-box-shadow: 0px 0px 5px 0px rgba(119, 120, 121, 0.75);
       -moz-box-shadow: 0px 0px 5px 0px rgba(119, 120, 121, 0.75);
       box-shadow: 0px 0px 5px 0px rgba(119, 120, 121, 0.75); }
